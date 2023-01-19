@@ -4,6 +4,7 @@ const User= require('../models/users')
 const Meal= require('../models/meals')
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken')
+const cors = require('cors')
 router.use(express.json())
 const {JWT_SECRET,MONGOURI} = require('../config/keys')
 

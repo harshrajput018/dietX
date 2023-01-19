@@ -3,6 +3,7 @@ const router = express.Router()
 const Exercise= require('../models/exercise')
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken')
+const cors = require('cors')
 
 const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
