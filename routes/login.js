@@ -8,7 +8,7 @@ router.use(express.json())
 
 const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
-console.log(JWT_SECRET)
+
 
 router.post('/',async(req,res)=>{
     console.log(req.body)

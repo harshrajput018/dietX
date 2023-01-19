@@ -5,7 +5,7 @@ const Meal= require('../models/meals')
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken')
 router.use(express.json())
-const JWT_SECRET = 'nbchxcjsbjs'
+const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
 router.post('/',async(req,res)=>{
     console.log(req.body)

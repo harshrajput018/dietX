@@ -4,12 +4,12 @@ const Exercise= require('../models/exercise')
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken')
 
-const JWT_SECRET = 'nbchxcjsbjs'
+const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
 router.use(express.json());
 
 
-router.post('/',async(req,res)=>{
+router.get('/',async(req,res)=>{
 
     console.log(req.body);
 
