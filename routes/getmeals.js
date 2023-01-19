@@ -10,7 +10,7 @@ const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
 router.use(cors())
 
-router.post('/',async(req,res)=>{
+router.get('/',async(req,res)=>{
 
     console.log(req.header('auth-token'))
 
