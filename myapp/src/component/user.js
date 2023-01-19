@@ -20,7 +20,7 @@ export default function User(){
 
       
         
-        fetch('http://localhost:8000/getmeals',{
+        fetch('/getmeals',{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json',
@@ -32,7 +32,7 @@ export default function User(){
         }).then(data=>data.json()).then(data=>{set(data.meals);
         name(data.user.first)}).then(console.log('ff'))
 
-        fetch('http://localhost:8000/getex',{
+        fetch('/getex',{
           method:'POST',
             headers:{
                 'Content-Type': 'application/json',

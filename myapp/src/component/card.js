@@ -112,7 +112,7 @@ export default function Card(props) {
 
 
         e.preventDefault()
-        fetch('http://localhost:8000/addmeals', {
+        fetch('/addmeals', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -129,7 +129,7 @@ export default function Card(props) {
     function handlesubmitex(e) {
 
         e.preventDefault()
-        fetch('http://localhost:8000/addexercise', {
+        fetch('/addexercise', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -155,7 +155,7 @@ export default function Card(props) {
 
     useEffect(() => {
 
-        fetch('http://localhost:8000/admin/getmeals', {
+        fetch('/admin/getmeals', {
 
             headers: {
                 'id': props.elem._id,
@@ -167,7 +167,7 @@ export default function Card(props) {
     }, [d])
 
     useEffect(() => {
-        fetch('http://localhost:8000/admin/getex', {
+        fetch('/admin/getex', {
 
             headers: {
                 'id': props.elem._id,
@@ -178,7 +178,7 @@ export default function Card(props) {
     }, [dex])
 
     function fetchdata() {
-        fetch('http://localhost:8000/admin/getmeals', {
+        fetch('/admin/getmeals', {
 
             headers: {
                 'id': props.elem._id,
@@ -190,7 +190,7 @@ export default function Card(props) {
     }
 
     function fetchdataex() {
-        fetch('http://localhost:8000/admin/getex', {
+        fetch('/admin/getex', {
 
             headers: {
                 'id': props.elem._id,
@@ -269,7 +269,7 @@ export default function Card(props) {
 
                                             </div></div>
                                         <div onClick={() => {
-                                            fetch('http://localhost:8000/deletemeal', {
+                                            fetch('/deletemeal', {
                                                 method: 'POST',
                                                 headers: {
                                                     'Content-Type': 'application/json',
@@ -325,7 +325,7 @@ export default function Card(props) {
 
                                         console.log(meal)
 
-                                        fetch('http://localhost:8000/addmeals', {
+                                        fetch('/addmeals', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',
@@ -440,7 +440,7 @@ export default function Card(props) {
 
                                         console.log(meal)
 
-                                        fetch('http://localhost:8000/addexercise', {
+                                        fetch('/addexercise', {
                                             method: 'POST',
                                             headers: {
                                                 'Content-Type': 'application/json',

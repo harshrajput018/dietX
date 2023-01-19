@@ -12,7 +12,7 @@ export default function Admin() {
     console.log(allUsers)
 
     useEffect(() => {
-        fetch('http://localhost:8000/admin').then(data => data.json()).then(data => set(data.allUsers))
+        fetch('/admin').then(data => data.json()).then(data => set(data.allUsers))
     }, [])
 
     console.log(user)

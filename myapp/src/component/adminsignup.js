@@ -19,7 +19,7 @@ export default function AdminSignup() {
 
     function handlesubmit(e){
         e.preventDefault()
-        fetch('http://localhost:8000/adminsignup',{
+        fetch('/adminsignup',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',

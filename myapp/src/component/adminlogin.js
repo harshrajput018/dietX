@@ -37,7 +37,7 @@ export default function AdminLogin() {
     function handleclick(e) {
 
         e.preventDefault()
-        fetch('http://localhost:8000/adminlogin', {
+        fetch('/adminlogin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
