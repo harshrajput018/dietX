@@ -11,7 +11,7 @@ const getex = require('./routes/getex')
 const deletemeal = require('./routes/deletemeal')
 const addexercise = require('./routes/addexercise')
 
-const {JWT_SECRET, MONGOURI} = require('./config/keys/')
+const {MONGOURI} = require('./config/keys')
 const mongoose=require('mongoose');
 var app = express()
  
@@ -46,6 +46,6 @@ app.get('/',(req,res)=>{
     res.send({name:'harsh'});
 })
 
-app.listen('8000',()=>{
+app.listen('8001',()=>{
     console.log('server is listening at port 8000');
 })

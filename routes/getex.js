@@ -4,7 +4,7 @@ const Exercise= require('../models/exercise')
 const mongoose=require('mongoose')
 const jwt=require('jsonwebtoken')
 
-const {JWT_SECRET, MONGOURI} = require('../config/keys/')
+const JWT_SECRET = 'nbchxcjsbjs'
 
 router.use(express.json());
 
