@@ -15,7 +15,7 @@ router.get('/',async(req,res)=>{
 
     console.log(req.body);
 
-    console.log(req.header('auth-token'))
+    console.log(req.header('mealdate'))
 
     if(req.header('auth-token')=='null')
 
