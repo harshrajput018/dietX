@@ -7,6 +7,7 @@ const jwt=require('jsonwebtoken')
 const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
 router.use(express.json());
+router.use(cors())
 
 
 router.get('/',async(req,res)=>{

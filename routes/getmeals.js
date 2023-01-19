@@ -7,6 +7,8 @@ const jwt=require('jsonwebtoken')
 router.use(express.json())
 const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
+router.use(cors())
+
 router.post('/',async(req,res)=>{
 
     console.log(req.header('auth-token'))
