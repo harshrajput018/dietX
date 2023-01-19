@@ -29,7 +29,7 @@ router.post('/',async(req,res)=>{
 
     
 
-    const exercises=await Exercise.find({userid:mongoose.Types.ObjectId(data.user.id),exdate:req.body.mealdate})
+    const exercises=await Exercise.find({userid:mongoose.Types.ObjectId(data.user.id),exdate:req.header('mealdate')})
 
     console.log(exercises)
 

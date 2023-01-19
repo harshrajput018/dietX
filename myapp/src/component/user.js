@@ -25,9 +25,9 @@ export default function User(){
             headers:{
                 'Content-Type': 'application/json',
                 'auth-token':localStorage.getItem('auth-token'),
-                
+                'mealdate': d
             },
-            body:JSON.stringify({mealdate:d,kk:'kk'})
+            
             
         }).then(data=>data.json()).then(data=>{set(data.meals);
         name(data.user.first)}).then(console.log('ff'))
@@ -37,9 +37,10 @@ export default function User(){
             headers:{
                 'Content-Type': 'application/json',
                 'auth-token':localStorage.getItem('auth-token'),
+                'mealdate': d
                 
             },
-            body:JSON.stringify({mealdate:d,kk:'kk'})
+            
             
         }).then(data=>data.json()).then(data=>{setex(data.exercises) ;console.log(data)})
       

@@ -25,7 +25,7 @@ router.post('/',async(req,res)=>{
 
     
 
-    const meals=await Meal.find({userid:mongoose.Types.ObjectId(data.user.id),mealdate:req.body.mealdate})
+    const meals=await Meal.find({userid:mongoose.Types.ObjectId(data.user.id),mealdate:req.header('mealdate')})
 
     const user=await User.findOne({_id:mongoose.Types.ObjectId(data.user.id)});
 
