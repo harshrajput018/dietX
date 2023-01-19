@@ -21,7 +21,7 @@ export default function User(){
       
         
         fetch('/getmeals',{
-            method:'POST',
+            
             headers:{
                 'Content-Type': 'application/json',
                 'auth-token':localStorage.getItem('auth-token'),
@@ -33,7 +33,7 @@ export default function User(){
         name(data.user.first)}).then(console.log('ff'))
 
         fetch('/getex',{
-          method:'POST',
+          
             headers:{
                 'Content-Type': 'application/json',
                 'auth-token':localStorage.getItem('auth-token'),
