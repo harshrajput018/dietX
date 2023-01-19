@@ -8,7 +8,7 @@ router.use(express.json())
 const {JWT_SECRET,MONGOURI} = require('../config/keys')
 
 router.post('/',async(req,res)=>{
-    console.log(req.body)
+
     console.log(req.header('auth-token'))
 
     if(req.header('auth-token')=='null')
