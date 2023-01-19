@@ -29,7 +29,7 @@ router.post('/',async(req,res)=>{
 
     const user=await User.findOne({_id:mongoose.Types.ObjectId(data.user.id)});
 
-    console.log(user.first,user.last,meals)
+    console.log(user.first,user.last,'last',meals)
 
     res.send({meals,user});
 })
