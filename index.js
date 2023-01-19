@@ -11,10 +11,11 @@ const getex = require('./routes/getex')
 const deletemeal = require('./routes/deletemeal')
 const addexercise = require('./routes/addexercise')
 
+const {JWT_SECRET, MONGOURI} = require('./config/keys/')
 const mongoose=require('mongoose');
 var app = express()
  
-mongoose.connect('mongodb+srv://Harsh1827:Harsh18@cluster0.j4oejhd.mongodb.net/?retryWrites=true&w=majority').then(()=>{console.log('db has been connected')});
+mongoose.connect(MONGOURI).then(()=>{console.log('db has been connected')});
 
 app.use(cors())
 app.use('/admin', admin)
