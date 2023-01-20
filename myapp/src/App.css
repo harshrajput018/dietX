@@ -78,6 +78,11 @@ body {
   border-radius:10rem;
   text-align: right;
 }
+.piyush {
+  width:405px;
+  border-radius:10rem;
+  text-align: right;
+}
 
 #container{
   display: flex;
