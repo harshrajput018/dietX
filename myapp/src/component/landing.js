@@ -24,7 +24,7 @@ export default function Landing() {
                         
                     </div>
                 </div>
-                <div style={{textAlign:'right'}}>
+                <div >
                     <img style={{width:'80%'}} id='piyush' src="./piyush.jpeg" />
                 </div>
             </div>
