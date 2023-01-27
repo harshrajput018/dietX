@@ -124,3 +124,57 @@ body {
     text-align: center;
   }
 }
+
+#menu{
+  display: none;
+}
+
+@media screen and (min-width:541px) {
+
+  #collapseExample{
+    display: none;
+  }
+
+  .dropdown-menu{
+    width: 200px;
+  }
+
+  .dropdown-menu li {
+    padding: 0.5rem 0;
+  }
+  
+}
+
+
+
+#big{
+  display: flex;
+  padding:1rem 0;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:540px) {
+
+  #big{
+    display: none;
+  }
+
+  #menu{
+    display: block;
+  }
+  
+  #big NavLink{
+    padding: 2rem;
+  }
+
+  
+
+
+
+  
+}
+
+
+

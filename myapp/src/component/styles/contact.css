@@ -1,0 +1,27 @@
+#allcontacts{
+    display: flex;
+    
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    color: black;
+    font-weight: 800;
+    font-size: 1.25;
+    background-color: white;
+
+}
+
+
+.elem{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width:645px) {
+
+    #allcontacts{
+        flex-direction: column;
+    }
+    
+}
