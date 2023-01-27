@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import Login from "./component/login";
-import { BrowserRouter, Route, NavLink, Link, Routes } from "react-router-dom";
+import { HashRouter, Route, NavLink, Link, Routes } from "react-router-dom";
 import Admin from "./component/admin";
 import User from "./component/user";
 import Signup from "./component/signup";
@@ -50,7 +50,7 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <HashRouter>
 
       <nav style={{ background: 'white' }} >
 
@@ -207,7 +207,7 @@ function App() {
 
         <Route path="/adminlogin" element={<AdminLogin />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
