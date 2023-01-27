@@ -1,5 +1,5 @@
 import './styles/contact.css'
-export default function Landing() {
+export default function Contact() {
 
 
 
