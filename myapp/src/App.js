@@ -193,19 +193,19 @@ function App() {
         <Route path="/" element={< Landing />} />
         <Route path="/login" element={<Login />} />
 
-        <Route path="admin" element={<Admin />} />
+        <Route path="/admin" element={<Admin />} />
 
-        <Route path="user" element={<User />} />
+        <Route path="/user" element={<User />} />
 
-        <Route path="signup" element={<Signup />} />
+        <Route path="/signup" element={<Signup />} />
 
-        <Route path="adminsignup" element={<AdminSignup />} />
+        <Route path="/adminsignup" element={<AdminSignup />} />
 
-        <Route path="card" element={<Card />} />
+        <Route path="/card" element={<Card />} />
 
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="adminlogin" element={<AdminLogin />} />
+        <Route path="/adminlogin" element={<AdminLogin />} />
       </Routes>
     </BrowserRouter>
   )
