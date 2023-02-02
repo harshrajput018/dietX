@@ -98,7 +98,7 @@ export default function User() {
                 <th scope="col">#</th>
                 <th scope="col">Time</th>
                 <th scope="col">Meal</th>
-                <th scope="col">Date</th>
+                
 
               </tr>
             </thead>
@@ -120,7 +120,7 @@ export default function User() {
                 <th scope="col">#</th>
                 <th scope="col">Exercise</th>
                 <th scope="col">Sets</th>
-                <th scope="col">Date</th>
+                
 
               </tr>
             </thead>
