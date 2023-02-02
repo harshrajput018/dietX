@@ -95,10 +95,10 @@ export default function User() {
           }} >Your Exercise</button><div id="meal" style={{ display: 'none', marginTop: '3rem' }}><table className="table" style={{ background: 'white', borderRadius: '1rem' }}>
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Time</th>
-                <th scope="col">Meal</th>
-                
+                <th scope="col" style={{ width: '10%' }}>#</th>
+                <th scope="col" style={{ width: '70%' }}>Time</th>
+                <th scope="col" style={{ width: '20%' }}>Meal</th>
+
 
               </tr>
             </thead>
@@ -117,10 +117,10 @@ export default function User() {
           <div id="ex" style={{ display: 'none', marginTop: '3rem' }}>{exercises.length !== 0 ? <table className="table" style={{ background: 'white', borderRadius: '1rem' }}>
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Exercise</th>
-                <th scope="col">Sets</th>
-                
+                <th scope="col" style={{ width: '10%' }}>#</th>
+                <th scope="col" style={{ width: '70%', textAlign: 'center' }}>Exercise</th>
+                <th scope="col" style={{ width: '20%' }}>Sets</th>
+
 
               </tr>
             </thead>
