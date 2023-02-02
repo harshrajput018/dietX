@@ -113,7 +113,7 @@ function App() {
               <ul className="dropdown-menu" >
                 <li style={{ textDecoration: 'none', color: 'black', borderColor: 'skyblue' }}><Link style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/user'} >  DashBoard</Link></li>
                 <li style={{ textDecoration: 'none', color: 'black',  borderColor: 'skyblue' }}><Link onClick={() => { localStorage.removeItem('auth-token'); inc(prev => prev + 1) }} style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/login'}>Logout</Link></li>
-                <li style={{ textDecoration: 'none', color: 'black',  borderColor: 'skyblue' }}><Link onClick={() => { localStorage.removeItem('auth-token-admin'); inc(prev => prev + 1) }} style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/adminlogin'}>Logout-admin</Link></li>
+                {localStorage.getItem('auth-token-admin') && <li style={{ textDecoration: 'none', color: 'black',  borderColor: 'skyblue' }}><Link onClick={() => { localStorage.removeItem('auth-token-admin'); inc(prev => prev + 1) }} style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/adminlogin'}>Logout-admin</Link></li>}
               </ul>
             </Link>
 
@@ -172,7 +172,7 @@ function App() {
                   <ul className="dropdown-menu" style={{ width: '100%' }}>
                     <li style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue' }}><Link style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/user'} >DashBoard</Link></li>
                     <li style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue' }}><Link onClick={() => { localStorage.removeItem('auth-token'); inc(prev => prev + 1) }} style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/login'}>Logout</Link></li>
-                    <li style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue' }}><Link onClick={() => { localStorage.removeItem('auth-token-admin'); inc(prev => prev + 1) }} style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/adminlogin'}>Logout-admin</Link></li>
+                    {localStorage.getItem('auth-token-admin') && <li style={{ textDecoration: 'none', color: 'black',  borderColor: 'skyblue' }}><Link onClick={() => { localStorage.removeItem('auth-token-admin'); inc(prev => prev + 1) }} style={{ textDecoration: 'none', color: 'black', padding: '0.5rem 10%', borderColor: 'skyblue', fontWeight: 'bolder' }} to={'/adminlogin'}>Logout-admin</Link></li>}
                   </ul>
                 </Link>
 
